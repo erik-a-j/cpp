@@ -22,13 +22,13 @@ AlignOperands: Align
 SortIncludes: true
 InsertBraces: true # Control statements must have curly brackets
 AlignTrailingComments: true
-AllowAllArgumentsOnNextLine: true
+AllowAllArgumentsOnNextLine: false
 AllowAllParametersOfDeclarationOnNextLine: true
 AllowShortEnumsOnASingleLine: true
 AllowShortBlocksOnASingleLine: Empty
 AllowShortCaseLabelsOnASingleLine: true
 AllowShortFunctionsOnASingleLine: None
-AllowShortLambdasOnASingleLine: All
+AllowShortLambdasOnASingleLine: Empty
 AllowShortIfStatementsOnASingleLine: Never
 AllowShortLoopsOnASingleLine: false
 AlwaysBreakAfterDefinitionReturnType: None
@@ -38,7 +38,7 @@ AlwaysBreakTemplateDeclarations: Yes
 AttributeMacros:
   - __capability
 BinPackArguments: true
-BinPackParameters: true
+BinPackParameters: OnePerLine
 BreakBeforeBraces: Custom
 BraceWrapping:
   AfterCaseLabel: false
@@ -52,7 +52,7 @@ BraceWrapping:
   AfterUnion: false
   AfterExternBlock: false
   BeforeCatch: true
-  BeforeElse: false
+  BeforeElse: true
   BeforeLambdaBody: false
   BeforeWhile: false
   IndentBraces: false
@@ -116,7 +116,7 @@ InsertTrailingCommas: None
 JavaScriptQuotes: Leave
 JavaScriptWrapImports: true
 KeepEmptyLinesAtTheStartOfBlocks: true
-LambdaBodyIndentation: Signature
+LambdaBodyIndentation: OuterScope
 MacroBlockBegin: ""
 MacroBlockEnd: ""
 MaxEmptyLinesToKeep: 1
